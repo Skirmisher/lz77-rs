@@ -16,9 +16,11 @@ impl From<io::Error> for ErrorKind {
 }
 
 impl From<&str> for ErrorKind {
-    fn from(msg: &str) -> Self {
-        ErrorKind::CodeWordError { msg: msg.to_string() }
-    }
+	fn from(msg: &str) -> Self {
+		ErrorKind::CodeWordError {
+			msg: msg.to_string(),
+		}
+	}
 }
 
 pub type Result<T> = std::result::Result<T, ErrorKind>;
