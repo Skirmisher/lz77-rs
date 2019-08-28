@@ -1,20 +1,25 @@
 [package]
 name = "lz77-rs"
-version = "0.1.0"
-authors = ["moritz9422 <moritz9422@gmail.com>"]
+version = "0.1.1"
+authors = ["moritz9422 <moritz9422@gmail.com>", "Will Springer <skirmisher@protonmail.com>"]
+autobins = false
+edition = "2015"
+license = "Unlicense"
 
 [lib]
 name = "lz77"
 
-[[bin]]
+[[example]]
 name = "compress"
 path = "src/bin/compress.rs"
 
-[[bin]]
+[[example]]
 name = "decompress"
 path = "src/bin/decompress.rs"
 
 [dependencies]
-error-chain = "0.5"
-byteorder = "0.5.3"
-clap = "2.19.0"
+byteorder = "^1"
+failure  = "^0.1"
+
+[dev-dependencies]
+clap = "^2"
