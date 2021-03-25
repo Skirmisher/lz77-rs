@@ -1,6 +1,6 @@
 [package]
-name = "lz77-rs"
-version = "0.1.1"
+name = "lz77"
+version = "0.1.2"
 authors = ["moritz9422 <moritz9422@gmail.com>", "Will Springer <skirmisher@protonmail.com>"]
 autobins = false
 edition = "2015"
